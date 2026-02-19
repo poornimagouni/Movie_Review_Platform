@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background-color: #141414;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* LOGIN PAGE */
+
+/* LOGIN PAGE */
+
+/* LOGIN PAGE */
+
+.login-container {
+  height: 100vh;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;   /* Stack heading + box */
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* MAIN TITLE OUTSIDE BOX */
+.login-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* Larger Login Box */
+.login-box {
+  width: 380px;   /* Increased size */
+  background: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.login-box input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+.login-box input:focus {
+  outline: none;
+  border: 1px solid #e50914;
+}
+
+.login-box button {
+  padding: 12px;
+  border: none;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.login-box button:hover {
+  background: #b20710;
+}
+
+
+/* HOME PAGE */
+
+.section-title {
+  margin-left: 30px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.movie-card img {
+  width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.movie-card img:hover {
+  transform: scale(1.1);
+}
+
+/* DETAILS PAGE */
+
+.details-page {
+  padding: 30px;
+}
+
+.details-header {
+  display: flex;
+  gap: 30px;
+}
+
+.details-header img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.review-box {
+  background: #222;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: crimson;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
 }
